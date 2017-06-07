@@ -1,0 +1,46 @@
+{
+  "DataManagementPlan": {
+    "hasAuthors": [
+      {
+        "contact": "simon.oblasser@student.tuwien.ac.at",
+        "name": "Simon Oblasser",
+        "orcid": "orcid.org/0000-0002-3611-3483"
+      },
+      {
+        "contact": "rafael.konlechner@tuwien.ac.at",
+        "name": "Rafael Konlechner",
+        "orcid": "orcid.org/0000-0002-5842-5031"
+      }
+    ],
+    "hasDataObject": [
+      {
+        "datatype": "JSON",
+        "description": "Time series of divorced marriages in Salzburg",
+        "license": "",
+        "origin": "",
+        "sha": "",
+        "type": "DataObject::File"
+      },
+      {
+        "license": "",
+        "sha": "",
+        "type": "DataObject::SourceCode"
+      },
+      {
+        "datatype": "Dockerfile",
+        "docker": "version",
+        "license": "",
+        "sha": "",
+        "type": "DataObject::Environment"
+      }
+    ],
+    "hasMetaData": {
+      "date": "2017-06-01",
+      "eurovoc": {
+        "divorce": "http://eurovoc.europa.eu/483",
+        "marital status": "http://eurovoc.europa.eu/4184"
+      },
+      "version": "1.0.0"
+    }
+  }
+}
