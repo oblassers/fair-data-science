@@ -31,8 +31,8 @@
 				<p>{{description}}</p>
 			</div>
 			<div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset">
-				<h3 style="text-align: center;">Data Object Overview <span class="info"><i class="material-icons" id="summary-tt">info_outline</i></span></h3>
-				<div class="mdl-tooltip" data-mdl-for="summary-tt">
+				<h3 style="text-align: center;">Data Object Overview <span class="info"><i class="material-icons" id="overview-tt">info_outline</i></span></h3>
+				<div class="mdl-tooltip" data-mdl-for="overview-tt">
 					This section could be adapted depending on the viewer's perspective.
 				</div>
 				<p style="text-align: center;">This section provides an overview of all the data artifacts used in the experiment.</p>
@@ -48,8 +48,8 @@
 						<table class="overview-table">
 							<tbody>
 								<tr v-for="o in overview">
-									<td width="20%" v-html="o.name"></td>
-									<td v-html="o.value"></td>
+									<td style="min-width: 120px;" v-html="o.name"></td>
+									<td style="min-width: 120px;" v-html="o.value"></td>
 								</tr>
 							</tbody>
 						</table>
@@ -67,6 +67,9 @@
 					<div class="mdl-tabs__panel" id="documentation-panel">
 						<div class="description">
 							<div>{{documentation}}</div>
+                            <div style="text-align: center; margin-top: 20px;">
+                            <a v-bind:href="documentationLink" target="_blank" class="mdl-button mdl-button--primary"><i class="material-icons">description</i>README.md</a>
+                        </div>
 						</div>
 					</div>
 					<div class="mdl-tabs__panel" id="budget-panel">
@@ -78,7 +81,10 @@
 				</div>
 			</div>
 			<div class="mdl-cell mdl-cell--12-col">
-				<h3 style="text-align: center;">Data Object Metadata</h3>
+				<h3 style="text-align: center;">Data Object Metadata <span class="info"><i class="material-icons" id="metadata-tt">info_outline</i></span</h3>
+                    <div class="mdl-tooltip" data-mdl-for="metadata-tt">
+					As with all the other content, all of the data below is generated from the data model.
+				</div>
 				<p style="text-align: center;">This section provides the raw content of the linked project metadata description, concerning the data objects in the data bundle.</p>
 			</div>
 			<div v-for="obj in objects" class="mdl-cell mdl-cell--4-col">

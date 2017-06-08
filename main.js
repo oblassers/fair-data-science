@@ -15,6 +15,7 @@ var app = new Vue({
         preservation: null,
         sharing: null,
         documentation: null,
+        documentationLink: null,
         budget: null,
         budgetJustification: null,
         overview: []
@@ -23,7 +24,7 @@ var app = new Vue({
 		var self = this;
 		d3.json("dmp.json", function(data) {
 			self.json = data;
-			self.title = data["dcterms:titleFollow"];
+			self.title = data["dcterms:title"];
 			self.description = data["dcterms:description"];
 			self.version = data["dcterms:hasVersion"];
 			self.date = data["dc:date"];
@@ -45,6 +46,7 @@ var app = new Vue({
             var format = metadata["premis:hasFormat"];
             var sha = metadata["premis:fixity"]["premis:messageDigest"];
             var repository = bundle["dmp:hasDataRepository"];
+			var count = bundle["dmp:hasDataObject"].length;
 
             self.overview.push({
                 name: "ID",
@@ -66,10 +68,15 @@ var app = new Vue({
                 name: "SHA-256",
                 value: sha
             });
+            self.overview.push({
+                name: "Data Objects",
+                value: count
+            });
 
             self.preservation = bundle["dmp:hasPreservation"];
             self.sharing = bundle["dmp:hasDataSharing"];
             self.documentation = bundle["dmp:hasDocumentation"];
+            self.documentationLink = bundle["hasDocumentationLink"];
             self.budget = bundle["dmp:hasBudget"];
             self.budgetJustification = bundle["hasBudgetJustification"];
 			for (var obj of bundle["dmp:hasDataObject"]) {
@@ -83,7 +90,6 @@ var app = new Vue({
                     id: id !== undefined ? "<a href='" + id + "'>Source</a> (" + hostname + ")" : null,
 					json: JSON.stringify(obj, null, ' ').trim()
 				});
-                console.log(JSON.stringify(obj, null, ' '))
 			}
 		});
 	},

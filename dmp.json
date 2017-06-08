@@ -8,7 +8,7 @@
   },
   "@id": "http://example.org/dmps/mydmp",
   "@type": "dmp:DataManagementPlan",
-  "dcterms:title": "FAIR Data Science Assignment",
+  "dcterms:title": "Time series analysis of the duration of divorced marriages in Salzburg Land",
   "dcterms:description": "In this project, we analyze the time series of divorced marriages with respect to their duration in the area of Salzburg Land from 1985 to 2014. Our specific interest concerns the trend over marriages which lasted from 10 to 15 years.",
   "dc:creator": [
     {
@@ -49,6 +49,7 @@
       "dmp:hasDataSharing": "All files required to run the experiment are published on GitHub under the MIT license. A Digital Object Identifier (DOI) was created to unambiguously identify the data and make citation possible. The DOI was generated with Zenodo integrated with GitHub. The DOI always links to the latest release made on GitHub. Zenodo is an established, publicly searchable repository for science data, which supports the findability of our data. In order to enforce the reproducibility of our experiment we provide a Dockerfile along with the data. By following the instructions on GitHub it should be easy to run the experiment. Additionally a web page will be created to inform about the project and all aspects of the Data Management Plan.",
       "dmp:hasEthicsAndPrivacy": "Ethical issues should not arise, since the data does not contain any sensible or inflicting data to individuals or groups. Our data does only contain aggregated numbers about divorces, without any detailled information. The input data which forms the basis for our experiment is also available on a publicly accessible open data platform.",
       "dmp:hasDocumentation": "The data is documented in a self-contained way. The Jupyter notebook contains data, code, plots and documentation all in one. The experiment conducted in the Jupyter notebook is documented in a structured way describing each step of the experiment. Additionally a web page is created informing about the project and the details of the Data Management Plan. Documentation about the reproducibility of our experiment is available on the publicly accessible project repository on GitHub.",
+      "hasDocumentationLink": "https://github.com/oblassers/fair-data-science/blob/master/README.md",
       "dmp:hasDataCollection": "The data will be used in the self-contained, interactive computing environment Jupyter. For this reason, all generated data, including plotting results, will only be transient in the memory. The notebook itself - stored in the .ipynb file format (internally it is JSON) - contains textual descriptions and python code, that transforms and visualizes the data set. The Jupyter notebook can be further transformed into various formats (.py, .html, .md, .rst, .tex, .pdf). The size can be considered as rather small - in the range of 20-500KB. To support the reproducibility of our experiment Dockerfiles are created in order to establish a working environment.",
       "dmp:hasDataObject": [
         {
