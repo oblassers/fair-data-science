@@ -43,6 +43,8 @@
         "dmp:hasDataVolume": "19.6 kB"
       },
       "dmp:hasDataRepository": "https://github.com/oblassers/fair-data-science",
+      "dmp:hasBudget": "€ 3200",
+      "hasBudgetJustification": "This estimation includes expenses for personell, software and hardware. Given regular circumstances, the data management can be implemented by two contributors in two weeks. In total, 160h of work are estimated, which results in personell costs of € 3.200,-, assuming an hourly wage of 20€ (student workers). No costs for software or hardware arise, since all of the used software and hosting services are free of charge. For the long run, a different repository, more suitable for long term preservatio may be chosen. This could cause additional costs.",
       "dmp:hasPreservation": "The JSON data source file and all files related to Docker should be preserved. The ability to recreate the two Docker images for mongoDB and Jupyter, as well as the availability of the data source file will allow the reproduction of the experiment.",
       "dmp:hasDataSharing": "All files required to run the experiment are published on GitHub under the MIT license. A Digital Object Identifier (DOI) was created to unambiguously identify the data and make citation possible. The DOI was generated with Zenodo integrated with GitHub. The DOI always links to the latest release made on GitHub. Zenodo is an established, publicly searchable repository for science data, which supports the findability of our data. In order to enforce the reproducibility of our experiment we provide a Dockerfile along with the data. By following the instructions on GitHub it should be easy to run the experiment. Additionally a web page will be created to inform about the project and all aspects of the Data Management Plan.",
       "dmp:hasEthicsAndPrivacy": "Ethical issues should not arise, since the data does not contain any sensible or inflicting data to individuals or groups. Our data does only contain aggregated numbers about divorces, without any detailled information. The input data which forms the basis for our experiment is also available on a publicly accessible open data platform.",
@@ -51,7 +53,8 @@
       "dmp:hasDataObject": [
         {
           "@type": "dmp:Container",
-          "name": "Dockerfile",
+          "@github": "https://github.com/oblassers/fair-data-science/blob/master/Dockerfile",
+          "dc:title": "Dockerfile",
           "dmp:hasIntelectualPropertyRights": {
             "dcterms:license": "https://opensource.org/licenses/MIT"
           },
@@ -69,7 +72,7 @@
         {
           "@id": "https://www.salzburg.gv.at/ogd/7fa00c8b-6189-42b8-af93-cc1ebff0a818/divorce-szg-duration.json",
           "@type": "dmp:File",
-          "name": "JSON Data File",
+          "dc:title": "JSON Data File",
           "dmp:hasIntelectualPropertyRights": {
             "dcterms:license": "https://creativecommons.org/licenses/by/3.0/"
           },
@@ -87,7 +90,8 @@
         },
         {
           "@type": "dmp:File",
-          "name": "Jupyter Notebook",
+          "@github": "https://github.com/oblassers/fair-data-science/blob/master/Task-3-Experiment.ipynb",
+          "dc:title": "Jupyter Notebook",
           "dmp:hasMetadata": {
             "dcterms:description": "Jupyter notebook containing the experiment",
             "premis:hasObjectCharacteristics": {

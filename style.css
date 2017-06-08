@@ -50,6 +50,7 @@ pre {
     overflow-x: scroll;
     padding: 15px;
     border-radius: 4px;
+    height: 350px;
 }
 
 .authors {
@@ -68,4 +69,11 @@ pre {
 
 .icon {
     margin-right: 8px;
+}
+
+.info .material-icons {
+    color: grey;
+    font-size: 0.7em;
+    position: relative;
+    top:1px;
 }
