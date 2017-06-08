@@ -8,7 +8,7 @@
   },
   "@id": "http://example.org/dmps/mydmp",
   "@type": "dmp:DataManagementPlan",
-  "dcterms:title": "FAIR Data Science Assignment",
+  "dcterms:title": "Time series analysis of the duration of divorced marriages in Salzburg Land",
   "dcterms:description": "In this project, we analyze the time series of divorced marriages with respect to their duration in the area of Salzburg Land from 1985 to 2014. Our specific interest concerns the trend over marriages which lasted from 10 to 15 years.",
   "dc:creator": [
     {
