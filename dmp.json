@@ -8,8 +8,8 @@
   },
   "@id": "http://example.org/dmps/mydmp",
   "@type": "dmp:DataManagementPlan",
-  "dcterms:title": "FAIR Data Science DMP",
-  "dcterms:description": "In our research project we analyze the time series of divorced marriages with respect to their duration in the area of Salzburg Land from 1985 to 2014. In our research we are interested specifically in the trend/development over time of marriages which lasted 10-15 years.",
+  "dcterms:title": "FAIR Data Science Assignment",
+  "dcterms:description": "In this project, we analyze the time series of divorced marriages with respect to their duration in the area of Salzburg Land from 1985 to 2014. Our specific interest concerns the trend over marriages which lasted from 10 to 15 years.",
   "dc:creator": [
     {
       "@id": "orcid.org/0000-0002-5842-5031",
@@ -43,7 +43,6 @@
         "dmp:hasDataVolume": "19.6 kB"
       },
       "dmp:hasDataRepository": "https://github.com/oblassers/fair-data-science",
-      "dmp:hasBudget": "€ 3200",
       "dmp:hasPreservation": "The JSON data source file and all files related to Docker should be preserved. The ability to recreate the two Docker images for mongoDB and Jupyter, as well as the availability of the data source file will allow the reproduction of the experiment.",
       "dmp:hasDataSharing": "All files required to run the experiment are published on GitHub under the MIT license. A Digital Object Identifier (DOI) was created to unambiguously identify the data and make citation possible. The DOI was generated with Zenodo integrated with GitHub. The DOI always links to the latest release made on GitHub. Zenodo is an established, publicly searchable repository for science data, which supports the findability of our data. In order to enforce the reproducibility of our experiment we provide a Dockerfile along with the data. By following the instructions on GitHub it should be easy to run the experiment. Additionally a web page will be created to inform about the project and all aspects of the Data Management Plan.",
       "dmp:hasEthicsAndPrivacy": "Ethical issues should not arise, since the data does not contain any sensible or inflicting data to individuals or groups. Our data does only contain aggregated numbers about divorces, without any detailled information. The input data which forms the basis for our experiment is also available on a publicly accessible open data platform.",
@@ -52,6 +51,7 @@
       "dmp:hasDataObject": [
         {
           "@type": "dmp:Container",
+          "name": "Dockerfile",
           "dmp:hasIntelectualPropertyRights": {
             "dcterms:license": "https://opensource.org/licenses/MIT"
           },
@@ -69,6 +69,7 @@
         {
           "@id": "https://www.salzburg.gv.at/ogd/7fa00c8b-6189-42b8-af93-cc1ebff0a818/divorce-szg-duration.json",
           "@type": "dmp:File",
+          "name": "JSON Data File",
           "dmp:hasIntelectualPropertyRights": {
             "dcterms:license": "https://creativecommons.org/licenses/by/3.0/"
           },
@@ -86,6 +87,7 @@
         },
         {
           "@type": "dmp:File",
+          "name": "Jupyter Notebook",
           "dmp:hasMetadata": {
             "dcterms:description": "Jupyter notebook containing the experiment",
             "premis:hasObjectCharacteristics": {
