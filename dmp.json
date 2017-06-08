@@ -54,7 +54,7 @@
       "dmp:hasDataObject": [
         {
           "@type": "dmp:Container",
-          "@github": "https://github.com/oblassers/fair-data-science/blob/master/Dockerfile",
+          "github": "https://github.com/oblassers/fair-data-science/blob/master/Dockerfile",
           "dc:title": "Dockerfile",
           "dmp:hasIntelectualPropertyRights": {
             "dcterms:license": "https://opensource.org/licenses/MIT"
@@ -91,7 +91,7 @@
         },
         {
           "@type": "dmp:File",
-          "@github": "https://github.com/oblassers/fair-data-science/blob/master/Task-3-Experiment.ipynb",
+          "github": "https://github.com/oblassers/fair-data-science/blob/master/Task-3-Experiment.ipynb",
           "dc:title": "Jupyter Notebook",
           "dmp:hasMetadata": {
             "dcterms:description": "Jupyter notebook containing the experiment",

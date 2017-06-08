@@ -80,7 +80,7 @@ var app = new Vue({
             self.budget = bundle["dmp:hasBudget"];
             self.budgetJustification = bundle["hasBudgetJustification"];
 			for (var obj of bundle["dmp:hasDataObject"]) {
-                var github = obj["@github"];
+                var github = obj["github"];
                 var id = obj["@id"];
                 var hostname = extractHostname(id);
 				self.objects.push({
