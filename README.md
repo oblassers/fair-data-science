@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/93509881.svg)](https://zenodo.org/badge/latestdoi/93509881)
+
 # FAIR Data Science
 ## Data Management
 For the experiment described below a Data Management Plan was created, please visit [fair-data-science][3] to find out more about it.
